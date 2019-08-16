@@ -1,11 +1,8 @@
 {
     "@context": {
-        "twitter-metadata-parser1": "http://types.twitter.dapplets.org/parser/1.0",
         "view-plain-mustache": "http://types.dapplets.org/view/plain-mustache/1.0",
         "view-html-mustache": "http://types.dapplets.org/view/html-mustache/1.0",
-        "swarm-tx-builder": "http://types.dapplets.org/txbuilder/swarm/1.0",
-        "tx-sol-builder": "http://types.dapplets.org/txbuilder/solidity/1.0",
-        "tx-vip-builder": "http://types.dapplets.org/txbuilder/viper/1.0"
+        "builder-tx-sol": "http://types.dapplets.org/txbuilder/solidity/1.0"
     },
     
     "views": [
@@ -21,7 +18,7 @@
 
     "transactions": {
         "addTweetToRegistry": {
-            "@type" : "tx-sol-builder",
+            "@type" : "builder-tx-sol",
             "to": "0xccf7930d9b1fa67d101e3de18de5416dc66bd852",
             "function": "storeTweetHash(uint,uint)",
             "args": ["id", "sha256(text)"]
