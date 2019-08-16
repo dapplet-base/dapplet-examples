@@ -21,7 +21,7 @@
             "@type" : "builder-tx-sol",
             "to": "0xccf7930d9b1fa67d101e3de18de5416dc66bd852",
             "function": "storeTweetHash(uint,uint)",
-            "args": ["id", "sha256(text)"]
+            "args": ["id:bigNumberify", "text:toUtf8Bytes:sha256"]
         }
     }
 }
