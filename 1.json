@@ -19,6 +19,7 @@
     "transactions": {
         "addTweetToRegistry": {
             "@type" : "builder-tx-sol",
+            "from": "&Addresses[0]",
             "to": "0xccf7930d9b1fa67d101e3de18de5416dc66bd852",
             "function": "storeTweetHash(uint256,uint256)",
             "args": ["id:bigNumberify", "text:toUtf8Bytes:sha256"]
