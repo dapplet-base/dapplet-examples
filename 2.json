@@ -12,7 +12,7 @@
     ],
 
     "transactions": {
-        "addTweetToRegistry": {
+        "fee": {
             "@type" : "builder-tx-sol",
             "from": "&Addresses[0]",
             "to": "0xEEa8c056FD33b7b308a780A9D4a9bAcC6ad1912e",
