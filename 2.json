@@ -1,0 +1,22 @@
+{
+    "@context": {
+        "view-plain-mustache": "http://types.dapplets.org/view/plain-mustache/1.0",
+        "builder-tx-sol": "http://types.dapplets.org/txbuilder/solidity/1.0"
+    },
+    
+    "views": [
+        {
+            "@type": "view-plain-mustache",
+            "template": "Dapplet Extension Fee 0.0005 ETH"
+        }
+    ],
+
+    "transactions": {
+        "addTweetToRegistry": {
+            "@type" : "builder-tx-sol",
+            "from": "&Addresses[0]",
+            "to": "0xEEa8c056FD33b7b308a780A9D4a9bAcC6ad1912e",
+            "value": 500000000000000
+        }
+    }
+}
